@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/es.uclm.offlinemodel/src" modelPluginID="es.uclm.offlinemodel"
+    modelName="OfflineMOdel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>OfflineMOdel.ecore</foreignModel>
+  <genPackages prefix="Offlinemodel" disposableProviderFactory="true" ecorePackage="OfflineMOdel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="OfflineMOdel.ecore#//Mode">
+      <genEnumLiterals ecoreEnumLiteral="OfflineMOdel.ecore#//Mode/Offline"/>
+      <genEnumLiterals ecoreEnumLiteral="OfflineMOdel.ecore#//Mode/Online"/>
+      <genEnumLiterals ecoreEnumLiteral="OfflineMOdel.ecore#//Mode/Edition"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="OfflineMOdel.ecore#//Scheme">
+      <genEnumLiterals ecoreEnumLiteral="OfflineMOdel.ecore#//Scheme/Mandatory"/>
+      <genEnumLiterals ecoreEnumLiteral="OfflineMOdel.ecore#//Scheme/Free"/>
+      <genEnumLiterals ecoreEnumLiteral="OfflineMOdel.ecore#//Scheme/Incremental"/>
+    </genEnums>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//OfflineModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//OfflineModel/nodes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//OfflineModel/mode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//OfflineModel/scheme"/>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//OfflineModel/rootNode"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OfflineMOdel.ecore#//AbstractNode">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//AbstractNode/parent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//AbstractNode/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//AbstractNode/root"/>
+    </genClasses>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Node">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//Node/children"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//Node/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Node/composite"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Node/isRoot"/>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//Node/existeNodoPreCache"/>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//Node/existeNodoDefault"/>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//Node/existeNodoNoCache"/>
+    </genClasses>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Element">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//Element/facets"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OfflineMOdel.ecore#//Type"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//NoCache"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//PreCache"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Default"/>
+    <genClasses image="false" ecoreClass="OfflineMOdel.ecore#//Facet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Facet/EnabledOnline"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Facet/storage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Facet/update"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Facet/EnabledOffline"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Facet/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Input"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Output"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Control"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Navigation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//Navigation/dest"/>
+    </genClasses>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Offline"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Online"/>
+    <genClasses ecoreClass="OfflineMOdel.ecore#//Normal"/>
+  </genPackages>
+</genmodel:GenModel>

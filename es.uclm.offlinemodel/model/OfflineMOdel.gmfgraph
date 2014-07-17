@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="offlinemodel">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OfflineModelNodesTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeChildrenTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeTypeTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ElementParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ElementFacetsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ElementOfflineTargetDecoration"/>
+    <descriptors name="OfflineModelFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="OfflineModelFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="OfflineModelModeFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="OfflineModelSchemeFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="OfflineModelNodesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="OfflineModelNodesFigure" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="NodeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NodeFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        <children xsi:type="gmfgraph:Label" name="NodeNameLabel">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="5" left="5" bottom="5" right="5"/>
+          </border>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="NodeCompartmentFigure">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" horizontalAlignment="FILL"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="NodeTypeCompartmentFigure">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true" verticalAlignment="FILL" horizontalAlignment="FILL"/>
+        </children>
+      </actualFigure>
+      <accessors accessor="getFigureNodeTypeCompartmentFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="NodeParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeParentFigure" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="NodeChildrenFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeChildrenFigure" targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="NodeTypeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeTypeFigure" targetDecoration="//@figures.0/@figures.3"/>
+    </descriptors>
+    <descriptors name="ElementFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ElementFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <foregroundColor xsi:type="gmfgraph:RGBColor" blue="255"/>
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="252" blue="193"/>
+        <children xsi:type="gmfgraph:Label" name="ElementLabelName">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="5" left="5" bottom="5" right="5"/>
+          </border>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ElementFacetCompartmentFigure">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true" verticalAlignment="FILL" horizontalAlignment="FILL"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ElementParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ElementParentFigure" targetDecoration="//@figures.0/@figures.4"/>
+    </descriptors>
+    <descriptors name="ElementFacetsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ElementFacetsFigure" targetDecoration="//@figures.0/@figures.5"/>
+    </descriptors>
+    <descriptors name="ElementOfflineFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ElementOfflineFigure" targetDecoration="//@figures.0/@figures.6"/>
+    </descriptors>
+    <descriptors name="NoCacheFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NoCacheFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="NoCacheLabel" text="NoCache">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="PreCacheFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PreCacheFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="PreCacheLabel" text="PreCache">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DefaultTypeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DefaultTypeFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="DefaultTypeLabel" text="DefaultType">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InputFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InputFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="InputLabel" text="Input">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="OutputFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="OutputFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="OutputLabel" text="Output">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ControlFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ControlFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="ControlLabel" text="Control">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="NavigationOfflineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NavigationOfflineFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="NavigationOfflineLabel" text="NavigationOffline">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.16/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="NavigationOnlineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NavigationOnlineFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="NavigationOnlineLabel" text="NavigationOnline">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.17/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="NavigationNormalFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NavigationNormalFigure">
+        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+          <margins/>
+          <spacing/>
+        </layout>
+        <children xsi:type="gmfgraph:Label" name="NavigationNormalLabel" text="NavigationNormal">
+          <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true" grabExcessVerticalSpace="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.18/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ConnectionEltoNodeFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConnectionENPolyline" targetDecoration="//@figures.0/@descriptors.19/@actualFigure/@children.0">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:PolylineDecoration" name="targetDecoration">
+          <template x="-1" y="1"/>
+          <template/>
+          <template x="-1" y="-1"/>
+        </children>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="OfflineModel" figure="OfflineModelFigure"/>
+  <nodes name="Node" figure="NodeFigure"/>
+  <nodes name="Element" figure="ElementFigure"/>
+  <nodes name="NoCache" figure="NoCacheFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="PreCache" figure="PreCacheFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="DefaultType" figure="DefaultTypeFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="Input" figure="InputFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="Output" figure="OutputFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="Control" figure="ControlFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="NavigationOffline" figure="NavigationOfflineFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="NavigationOnline" figure="NavigationOnlineFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="NavigationNormal" figure="NavigationNormalFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <connections name="OfflineModelNodes" figure="OfflineModelNodesFigure"/>
+  <connections name="NodeEltoConnection" figure="ConnectionEltoNodeFigure"/>
+  <connections name="NodeParent" figure="NodeParentFigure"/>
+  <connections name="NodeChildren" figure="NodeChildrenFigure"/>
+  <connections name="NodeStatus" figure="NodeTypeFigure"/>
+  <connections name="ElementParent" figure="ElementParentFigure"/>
+  <connections name="ElementFacets" figure="ElementFacetsFigure"/>
+  <connections name="ElementOffline" figure="ElementOfflineFigure"/>
+  <compartments name="FacetCompartment" figure="ElementFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <compartments name="NodeTypeCompartment" figure="NodeFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <compartments name="NodeCompartment" figure="NodeFigure" collapsible="true" accessor="//@figures.0/@descriptors.2/@accessors.2"/>
+  <labels name="OfflineModelMode" figure="OfflineModelFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="NodeName" figure="NodeFigure" accessor="//@figures.0/@descriptors.2/@accessors.1"/>
+  <labels name="LabelInputFigure" figure="InputFigure" accessor="//@figures.0/@descriptors.13/@accessors.0"/>
+  <labels name="ElementName" figure="ElementFigure" accessor="//@figures.0/@descriptors.6/@accessors.1"/>
+  <labels name="NoCacheLabel" figure="NoCacheFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels name="OfflineModelScheme" figure="OfflineModelFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <labels name="PreCacheLabel" figure="PreCacheFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels name="DefaultTypeLabel" figure="DefaultTypeFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels name="LabelOutputFigure" figure="OutputFigure" accessor="//@figures.0/@descriptors.14/@accessors.0"/>
+  <labels name="LabelControlFigure" figure="ControlFigure" accessor="//@figures.0/@descriptors.15/@accessors.0"/>
+  <labels name="LabelNavOfflineFigure" figure="NavigationOfflineFigure" accessor="//@figures.0/@descriptors.16/@accessors.0"/>
+  <labels name="LabelNavOnLineFigure" figure="NavigationOnlineFigure" accessor="//@figures.0/@descriptors.17/@accessors.0"/>
+  <labels name="LabelNavNormalFigure" figure="NavigationNormalFigure" accessor="//@figures.0/@descriptors.18/@accessors.0"/>
+</gmfgraph:Canvas>
