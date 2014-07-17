@@ -20,7 +20,16 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//OfflineModel/nodes"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//OfflineModel/mode"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//OfflineModel/scheme"/>
-      <genOperations ecoreOperation="OfflineMOdel.ecore#//OfflineModel/rootNode"/>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//OfflineModel/rootNodes"/>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//OfflineModel/incremental">
+        <genParameters ecoreParameter="OfflineMOdel.ecore#//OfflineModel/incremental/n"/>
+      </genOperations>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//OfflineModel/mandatory">
+        <genParameters ecoreParameter="OfflineMOdel.ecore#//OfflineModel/mandatory/n"/>
+      </genOperations>
+      <genOperations ecoreOperation="OfflineMOdel.ecore#//OfflineModel/free">
+        <genParameters ecoreParameter="OfflineMOdel.ecore#//OfflineModel/free/n"/>
+      </genOperations>
     </genClasses>
     <genClasses image="false" ecoreClass="OfflineMOdel.ecore#//AbstractNode">
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//AbstractNode/parent"/>

@@ -11,14 +11,32 @@
       <details key="constraints" value="IncrementalScheme MandatoryScheme FreeScheme"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="IncrementalScheme" value="&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;scheme=Scheme::Incremental implies rootNode().existeNodoPreCache() and self.rootNode().existeNodoDefault()"/>
-      <details key="MandatoryScheme" value="&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;scheme=Scheme::Mandatory implies self.rootNode().existeNodoPreCache() and not self.rootNode().existeNodoDefault()"/>
-      <details key="FreeScheme" value="&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;scheme=Scheme::Free implies not self.rootNode().existeNodoPreCache() and self.rootNode().existeNodoDefault()"/>
+      <details key="IncrementalScheme" value="&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;self.rootNodes()->forAll(n:Node| self.incremental(n))"/>
+      <details key="MandatoryScheme" value="&#xA;&#x9;&#x9;&#x9;self.rootNodes()->forAll(n:Node| self.mandatory(n))"/>
+      <details key="FreeScheme" value="&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;self.rootNodes()->forAll(n:Node| self.free(n))"/>
     </eAnnotations>
-    <eOperations name="rootNode" lowerBound="1" eType="#//Node">
+    <eOperations name="rootNodes" ordered="false" upperBound="-1" eType="#//Node">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-        <details key="body" value="&#xA;&#x9;&#x9;&#x9;&#x9;nodes->any(parent.oclIsUndefined())"/>
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;&#x9;nodes->select(parent.oclIsUndefined())"/>
       </eAnnotations>
+    </eOperations>
+    <eOperations name="incremental" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;scheme=Scheme::Incremental implies n.existeNodoPreCache() and n.existeNodoDefault()"/>
+      </eAnnotations>
+      <eParameters name="n" lowerBound="1" eType="#//Node"/>
+    </eOperations>
+    <eOperations name="mandatory" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;scheme=Scheme::Mandatory implies n.existeNodoPreCache() and not n.existeNodoDefault()"/>
+      </eAnnotations>
+      <eParameters name="n" lowerBound="1" eType="#//Node"/>
+    </eOperations>
+    <eOperations name="free" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;scheme=Scheme::Free implies not n.existeNodoPreCache() and n.existeNodoDefault()"/>
+      </eAnnotations>
+      <eParameters name="n" lowerBound="1" eType="#//Node"/>
     </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
         eType="#//AbstractNode" containment="true" eOpposite="#//AbstractNode/root"/>
