@@ -31,7 +31,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//Node/children"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OfflineMOdel.ecore#//Node/type"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Node/composite"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Node/isRoot"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Node/isInitial"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OfflineMOdel.ecore#//Node/isAvailableOffline"/>
       <genOperations ecoreOperation="OfflineMOdel.ecore#//Node/existeNodoPreCache"/>
       <genOperations ecoreOperation="OfflineMOdel.ecore#//Node/existeNodoDefault"/>
       <genOperations ecoreOperation="OfflineMOdel.ecore#//Node/existeNodoNoCache"/>

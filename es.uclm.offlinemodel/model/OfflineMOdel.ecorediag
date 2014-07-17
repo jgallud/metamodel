@@ -46,8 +46,12 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_SXFI8eWMEeO5Qe9mAGibzw"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_ef7BQAqzEeSjleF_4fJIbQ" type="2001">
-        <element xmi:type="ecore:EAttribute" href="OfflineMOdel.ecore#//Node/isRoot"/>
+        <element xmi:type="ecore:EAttribute" href="OfflineMOdel.ecore#//Node/isInitial"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_ef7BQQqzEeSjleF_4fJIbQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Pg58oA3GEeSrBuxlqz64WQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="OfflineMOdel.ecore#//Node/isAvailableOffline"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Pg58oQ3GEeSrBuxlqz64WQ"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_1a9moqOaEeO-ssyCR5HEmg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_1a9mo6OaEeO-ssyCR5HEmg"/>
@@ -224,7 +228,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_sMaW8aObEeO-ssyCR5HEmg" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="OfflineMOdel.ecore#//Control"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sMaW8qObEeO-ssyCR5HEmg" x="300" y="504"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sMaW8qObEeO-ssyCR5HEmg" x="300" y="508"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_tFmBsKObEeO-ssyCR5HEmg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_tFmowKObEeO-ssyCR5HEmg" type="4001"/>
