@@ -21,13 +21,13 @@
       <actualFigure xsi:type="gmfgraph:PolylineConnection" name="OfflineModelNodesFigure" targetDecoration="//@figures.0/@figures.0"/>
     </descriptors>
     <descriptors name="NodeFigure">
-      <actualFigure xsi:type="gmfgraph:Rectangle" name="NodeFigure">
-        <layout xsi:type="gmfgraph:GridLayout" equalWidth="false">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="NodeFigure">
+        <layout xsi:type="gmfgraph:GridLayout">
           <margins/>
           <spacing/>
         </layout>
         <foregroundColor xsi:type="gmfgraph:RGBColor"/>
-        <children xsi:type="gmfgraph:Label" name="NodeNameLabel">
+        <children xsi:type="gmfgraph:Label" name="NodeNameLabel" text="">
           <layoutData xsi:type="gmfgraph:GridLayoutData" grabExcessHorizontalSpace="true"/>
           <border xsi:type="gmfgraph:MarginBorder">
             <insets top="5" left="5" bottom="5" right="5"/>

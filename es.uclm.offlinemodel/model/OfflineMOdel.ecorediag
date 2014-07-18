@@ -16,7 +16,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_WK55gaOZEeO-ssyCR5HEmg" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="OfflineMOdel.ecore#//OfflineModel"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WK55gqOZEeO-ssyCR5HEmg" x="228" y="32" height="83"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WK55gqOZEeO-ssyCR5HEmg" x="196" y="20" height="83"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_gIMpEKOZEeO-ssyCR5HEmg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_gIMpE6OZEeO-ssyCR5HEmg" type="4001"/>
@@ -278,7 +278,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_x7OO4aPSEeOSwaooIkNOsw" fontColor="4210752" fontName="Lucida Grande" fontHeight="10" lineColor="8421504"/>
     <element xmi:type="ecore:EEnum" href="OfflineMOdel.ecore#//Scheme"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7OO4qPSEeOSwaooIkNOsw" x="392" y="36" height="95"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x7OO4qPSEeOSwaooIkNOsw" x="484" y="32" height="95"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_lcm3EOWGEeO5Qe9mAGibzw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_lcneIOWGEeO5Qe9mAGibzw" type="4001"/>
